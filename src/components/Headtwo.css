@@ -1,0 +1,167 @@
+/* Headrtwo.css */
+
+.container2 {
+    width: 100%;
+    margin: 0 auto;
+    height: 8vh;
+    background-color: rgb(180, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9.4%;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .turboaz {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 35px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+  }
+  
+  .allads, .salons, .moto, .spareParts {
+    background-color: rgb(180, 19, 19);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .spareParts .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    display: none;
+    border-radius: 8px;
+    text-align: left;
+    background-color: white;
+    z-index: 1000;
+  }
+  
+  .spareParts:hover .dropdown {
+    display: block;
+  }
+  
+  .spareParts .dropdown button {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 9px 0;
+    width: 210px;
+    text-align: left;
+  }
+  
+  .spareParts .dropdown button:hover {
+    background-color: rgba(123, 94, 94, 0.1);
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .newAnnouncement {
+    background-color: #7ed321;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: margin-left 0.3s ease; 
+  }
+  
+ 
+
+.announcementIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; 
+  font-size: larger;
+  cursor: pointer;
+}
+
+.container2 .allads:hover,
+.container2 .salons:hover,
+.container2 .moto:hover
+{
+  color: rgb(181, 173, 173);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container2 .newAnnouncement:hover{
+  background-color: #5ead0a;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container2 {
+    padding: 0 7%;
+  }
+
+  .newAnnouncement {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    padding: 0 5%;
+  }
+
+  .newAnnouncement {
+    margin-left: 50px;
+  }
+
+  .spareParts .dropdown {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container2 {
+    flex-direction: column;
+    padding: 0 2%;
+    height: auto;
+  }
+
+  .section, .buttonContainer {
+    flex-direction: column;
+  }
+
+  .newAnnouncement {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .spareParts .dropdown {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+  .container2 {
+    padding: 0 12%;
+  }
+
+  .newAnnouncement {
+    margin-left: 160px;
+  }
+}
+
+
+
+  

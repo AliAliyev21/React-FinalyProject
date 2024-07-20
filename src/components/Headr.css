@@ -1,0 +1,158 @@
+/* Headr.css */
+
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+  }
+  
+  
+  .left-section, .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-section {
+    margin-left: 5%;
+  }
+
+  .right-section {
+    margin-right: 21%;
+  }
+  
+  .tapaz, .binaaz, .bossaz {
+    background-color: white;
+    color: #989494;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  .destek, .lang {
+    color: black;
+    padding: 5px 10px;
+    margin-right: 15px;
+    font-size: medium;
+  }
+  
+  .yardim {
+    color: #989494;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: medium;
+
+  }
+  
+  
+  .lang {
+    color: #989494;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: medium;
+
+  }
+  
+  .secilmisler {
+    background-color: white;
+    color: #989494;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  .giris {
+    background-color: white;
+    color: #989494;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  .secilmislerIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .girisIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  .container1 button:hover,
+.container1 label:hover,
+.container1 img:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.container1 button:hover img {
+  filter: invert(27%) sepia(88%) saturate(5853%) hue-rotate(357deg) brightness(103%) contrast(107%);
+}
+ 
+
+@media screen and (max-width: 1200px) {
+  .container1 {
+    padding: 0 5%;
+  }
+
+  .right-section {
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    padding: 0 3%;
+  }
+
+  .left-section {
+    margin-left: 3%;
+  }
+
+  .right-section {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container1 {
+    flex-direction: column;
+    padding: 0 2%;
+    height: auto;
+  }
+
+  .left-section, .right-section {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+  .container1 {
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+}
+
+.container3 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.left-column {
+  background-color: aliceblue;
+  width: 17%;
+  box-sizing: border-box;
+}
+
+.center-column {
+  margin: 0 auto;
+}
+
+.right-column {
+  background-color: aliceblue;
+  width: 17%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.left-column img,
+.right-column img {
+  max-width: 100%;
+  height: 630px;
+  display: block;
+}
+
+.markaBox {
+  position: relative;
+  right: 360px;
+  top: 35px;
+  width: 230px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.modelBox {
+  position: relative;
+  right: 80px;
+  top: -10px;
+  width: 230px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.yearBox {
+  position: relative;
+  right: -380px;
+  top: -100px;
+  width: 180px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.banBox {
+  position: relative;
+  right: 395px;
+  top: -80px;
+  width: 160px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.suretBox {
+  position: relative;
+  right: 195px;
+  top: -125px;
+  width: 170px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.fuelBox {
+  position: relative;
+  top: -170px;
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid rgb(196, 191, 191);
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.priceLbl1 {
+  position: relative;
+  right: -160px;
+  top: -55px;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.priceLbl2 {
+  position: relative;
+  right: -160px;
+  top: -55px;
+  color: rgb(106, 107, 108);
+  cursor: pointer;
+}
+
+.currentApp {
+  position: relative;
+  right: -385px;
+  top: -215px;
+  width: 170px;
+  height: 45px;
+  background-color: rgb(191, 28, 28);
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  color: white;
+  cursor: pointer;
+}
+
+select.modelBox option[disabled] {
+  color: gray;
+}
+
+.advanced-filters {
+  position: relative;
+  top: -240px;
+  width: 910px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oturucuBox{
+  width: 830px;
+  height: 45px;
+  color: rgb(106, 107, 108);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.select-techizat {
+  margin-bottom: 25px;
+}
+
+.select-techizat select {
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: medium;
+  color: #333;
+  padding: 0 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease;
+}
+
+.select-techizat select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.price-range input,
+.power-range input,
+.mileage-range input {
+  width: calc(40% - 10px);
+  height: 45px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: medium;
+  color: rgb(106, 107, 108);
+  padding: 0 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease;
+}
+
+.price-range input:last-child,
+.power-range input:last-child,
+.mileage-range input:last-child {
+  margin-right: 0;
+}
+
+.price-range input:focus,
+.power-range input:focus,
+.mileage-range input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.techizat {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techizat-button {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: medium;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.techizat-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.techizat-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.toggle-advanced {
+  position: relative;
+  text-align: center;
+  right: -185px;
+  top: -260px;
+  font-size: medium;
+}
+
+.toggle-advanced button {
+  background-color: whitesmoke;
+  border: none;
+  width: 170px;
+  height: 45px;
+  border-radius: 5px;
+  color: rgb(191, 28, 28);
+  font-size: medium;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-advanced button:hover {
+  background-color: #c3cbd3;
+}
+
+
+
+/* @media screen and (min-width: 1200px) {
+  .center-column {
+    width: 69%;
+  }
+} */
+
+
+.filtered-cars {
+  position: relative;
+  top: -240px;
+  width: 910px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card {
+  width: calc(25% - 15px); 
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.car-card .car-image {
+  width: 100%;
+  height:5cm;
+  object-fit:fill;
+}
+
+.car-card .car-details .car-price {
+  font-weight: bold;
+}
+
+.car-card .car-details .car-date {
+  font-weight:400;
+  color: rgb(155, 148, 148);
+}
+
+.heart-button {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.heart-button.selected {
+  color: #e2d8d8;
+}
+
+.show-selected-btn {
+  position: relative;
+  top: -500px;
+  left: 830px;
+  background-color: white;
+  color: #989494;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+}
+
+.show-selected-btn:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.heart-button.selected {
+  color: red;
+}
+
+.heartIcon {
+  width: 20px; 
+  height: 20px; 
+}
+
+
+
+
+
+
+
